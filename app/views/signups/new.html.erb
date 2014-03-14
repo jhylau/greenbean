@@ -11,7 +11,7 @@
           	<%= f.text_field :email %>
             <p>Pick someone you want to have lunch with!</p>
             <%= f.text_field :friend_email %>
-          	<%= f.select :cuisine, ["Chinese", "Japanese", "Italian", "Sandwiches", "Random", "Junk Food", "Buffets"] %>
+          	<%= f.select :cuisine, ["Don't Care", "Asian", "Italian", "Sandwiches", "Random", "Buffets"] %>
             <%= f.submit "Submit" %>
           <% end %>
         </div>
