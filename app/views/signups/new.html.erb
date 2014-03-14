@@ -1,0 +1,22 @@
+<div class="container perks">
+  <div class="container-fluid">
+    <div class="row  signup-form">
+      <div class="perks-heading">
+        <h1>Sign Up Now!</h1>
+        <div class="dotted-line"></div>
+        <div class="col-md-4 col-md-offset-4">
+          <%= bootstrap_form_for @signup do |f| %>
+            <%= f.select :event_date, options_for_select([Date.new(2014,4,4)]) %>
+            <p>Use your VMC email addresses!</p>
+          	<%= f.text_field :email %>
+            <p>Pick someone you want to have lunch with!</p>
+            <%= f.text_field :friend_email %>
+          	<%= f.select :cuisine, ["Chinese", "Japanese", "Italian", "Sandwiches", "Random", "Junk Food", "Buffets"] %>
+            <%= f.submit "Submit" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -32,7 +32,7 @@ gem 'hpricot'
 gem 'roadie'
 gem 'fastercsv'
 gem 'will_paginate'
-# gem 'font-awesome-sass'
+gem 'bootstrap_form'
 
 # Gems used only for assets and not required
 # in production environments by default.

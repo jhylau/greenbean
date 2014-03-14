@@ -2,5 +2,6 @@ Cleanpowerperks::Application.routes.draw do
 
   root :to => "home#index"
 
-  resources :perks
+  resources :lunches
+  resources :signups
 end

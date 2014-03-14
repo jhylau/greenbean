@@ -6,13 +6,14 @@
 
 div.perks {
 	margin-top: ($full-navbar-height + 20px);
-	text-align: center;
-	background-image: url("/assets/body-background.png");
+	text-align: center;	
 	margin-bottom: 20px;
+	background-image: url("/assets/body-background.png");
 }
 
+
 body {
-	background-image: url("/assets/balloons.jpg");
+	background-image: url('/assets/balloons.jpg');
 	background-position: center;
 	top: 75px;
 	background-attachment: scroll;
@@ -23,7 +24,6 @@ html, body, .container-fluid, .row {
 }
 
 div.perks-heading {
-	margin-bottom: 15px;
 	h1 {	
 		text-align: center;
 		margin-top: 20px;
@@ -31,6 +31,10 @@ div.perks-heading {
 	}
 }
 
+div.signup-form {
+	padding-bottom: 25px;	
+	background-image: url("/assets/body-background.png");
+}
 .sidebar {
   	background-color: white;
   	.tab-pane {
@@ -71,7 +75,7 @@ div.perks-heading {
 	cursor: pointer; cursor: hand;
 	text-align: center;
 	.perk-image-container {
-		height: 200px;
+		height: 100px;
 	}
 	.perk-image-container .img-responsive {
 		display: block;
