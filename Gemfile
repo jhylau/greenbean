@@ -31,7 +31,6 @@ gem 'newrelic_rpm'
 gem 'hpricot'
 gem 'roadie'
 gem 'fastercsv'
-gem 'will_paginate'
 gem 'bootstrap_form'
 
 # Gems used only for assets and not required

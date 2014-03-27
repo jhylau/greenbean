@@ -6,12 +6,12 @@
         <div class="dotted-line"></div>
         <div class="col-md-4 col-md-offset-4">
           <%= bootstrap_form_for @signup do |f| %>
-            <%= f.select :event_date, options_for_select([Date.new(2014,4,4)]) %>
+            <%= f.select :event_id, options_from_collection_for_select(Event.all, :id, :event_date) %>
             <p>Use your VMC email addresses!</p>
           	<%= f.text_field :email %>
-            <p>Pick someone you want to have lunch with!</p>
-            <%= f.text_field :friend_email %>
-          	<%= f.select :cuisine, ["Don't Care", "Asian", "Italian", "Sandwiches", "Random", "Buffets"] %>
+            <!-- <p>Pick someone you want to have lunch with!</p> -->
+            <%#= f.text_field :friend_email %>
+          	<%#= f.select :cuisine, ["Don't Care", "Asian", "Italian", "Sandwiches", "Random", "Buffets"] %>
             <%= f.submit "Submit" %>
           <% end %>
         </div>

@@ -5,6 +5,21 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Event.delete_all
+Restaurant.delete_all
+Signup.delete_all
+LunchGroup.delete_all
+first_event = Event.create(:event_date => Date.new(2014,4,4))
+quicpic = Restaurant.create(:name =>"Quic Pic")
+deguru = Restaurant.create(:name =>"Deguru")
+kingston = Restaurant.create(:name =>"Kingston Station")
 
-burts_bees = Brand.create(:title => "Burt's Bees", )
-burts_bees = Perk.create(:subtitle => "Up to 50% Off", :description => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?")
+Signup.create(:email => 1, :event_id => first_event.id)
+Signup.create(:email => 2, :event_id => first_event.id)
+Signup.create(:email => 3, :event_id => first_event.id)
+Signup.create(:email => 4, :event_id => first_event.id)
+Signup.create(:email => 5, :event_id => first_event.id)
+Signup.create(:email => 6, :event_id => first_event.id)
+Signup.create(:email => 7, :event_id => first_event.id)
+Signup.create(:email => 8, :event_id => first_event.id)
+Signup.create(:email => 9, :event_id => first_event.id)

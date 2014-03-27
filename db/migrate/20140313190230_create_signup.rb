@@ -5,7 +5,8 @@ class CreateSignup < ActiveRecord::Migration
     	t.string :cuisine
     	t.string :friend_email
     	t.string :enemy_email
-    	t.date :event_date
+    	t.integer :event_id
+    	t.integer :lunch_group_id
     end
   end
 end
