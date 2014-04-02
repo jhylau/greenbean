@@ -6,7 +6,7 @@ class SignupsController < ApplicationController
 	def create
 	 	@signup = Signup.new(signup_params)
     	if @signup.save
-      		redirect_to("/", :notice => 'Successfully Signed Up.')
+      		redirect_to("/", :notice => 'Successfully Signed Up!')
     	else
       		render :action => "new"
     	end
