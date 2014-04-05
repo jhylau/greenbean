@@ -12,11 +12,23 @@
           <img alt: "Pathway to Sustainability" title: "Pathway to Sustainability" class='img-landing'></img>
           <div class="container">
             <div class="carousel-caption">
-              <p id="notice"><%= flash[:notice] %></p>
-              <%= image_tag('foodiefinder.png')  %>  
-              <h1>Sign Up for VMC Group Lunches</h1>
-       <!--        <p><a class="btn btn-lg btn-primary btn-benefits" href="#" role="button">Learn More</a> -->
-              <a class="btn btn-lg" id='btn-sign-up' href="/signups/new" role="button"><i class="fa fa-glass"> Sign Up Now</i></a>
+              <div class="table-responsive">
+                <table class="table table-recycle">
+                  <!-- On rows -->
+                  <tr>
+                    <th class="active">Name</th>
+                    <th class="success">Starbucks (yes/no?)</th>
+                    <th class="warning">Image Captured</th>
+                  </tr>
+                  <% Greenbean.all.each do |g| %>
+                  <tr>
+                    <td class="active"><%= g.name %></td>
+                    <td class="success"><%= g.starbucks %></td>
+                    <td class="warning image"><%= image_tag("#{g.image_url}") %></td>
+                  </tr>
+                  <% end %>
+                </table>
+              </div>
             </div>
           </div>
       </div>
@@ -33,38 +45,20 @@
        <!-- Three columns of text below the carousel -->
         <div class="row featurette how-it-works">
           <div class="col-lg-4">
-            <i class="fa fa-calendar-o"></i>
-            <h2>1 - Sign Up</h2>
-            <p>Choose a date for lunch</p>
+            <i class="fa fa-glass"></i>
+            <h2>1 - Recycle Starbucks Cup</h2>
+            <p>Bring it to our bin</p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <i class="fa fa-check-square-o"></i>
-            <h2>2 - Pick Options</h2>
-            <p>Food type, people, etc</p>
+            <h2>2 - Check Online</h2>
+            <p>See how much you have recycled</p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4"> 
-            <i class="fa fa-smile-o"></i> 
-            <h2>3 - Get Lucky!</h2>
-            <p>See who you will eat with</p>
+            <i class="fa fa-gift"></i> 
+            <h2>3 - Get Rewards!</h2>
+            <p>See what deals you get</p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
       </div>
     </div>
-      <!-- START THE FEATURETTES -->
-  <div class="fourth-section">
-    <div class="container marketing">
-      <div class="row featurette">
-        <div class="col-md-5">
-          <h2 class="featurette-heading" id="featurette-sub-heading">Lunch Place of the Month</h2>
-          <%= image_tag("dguru.jpg", :class=>'img-responsive featurette-image') %>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-md-7">
-          <h2 class="featurette-heading" id="featurette-sub-heading">If you're going to eat,<br><span class="text-muted"> #eat-together.</span></h2>
-          <h3>FoodieFinder - A new way to connect people and food at VMC.</h3>
-        </div>
-      </div><!-- /.row -->
-    </div>
-  </div>
- 
-
-  

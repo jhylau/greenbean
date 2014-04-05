@@ -36,10 +36,10 @@ div.navbar-primary {
 	background-image: url("/assets/navbar-top-background.png");
 	box-shadow: 0 0 3px #999;
 }
-
+/*
 div.navbar-collapse {
 	background-image: url("/assets/navbar-background.png");
-}
+}*/
 
 ul.navbar-nav-primary {
 	min-height: 30px;
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6, a, p {
 }
 
 .img-landing {
-	background-image: url('/assets/lunch.png');
+	background-image: url('/assets/greenbackground.jpg');
 	background-repeat: no-repeat;
 	background-size: 1440px;
 	background-position: center;
@@ -288,4 +288,16 @@ p#notice {
 	color: red;
 	font-size: 40px;
 	font-weight: 900;
+}
+
+table.table-recycle {
+	color: black;
+	text-align: center;
+	font-size: 25px;
+	th {
+		text-align: center;	
+	}
+	td.image img {
+		width: 100px;
+	}
 }
