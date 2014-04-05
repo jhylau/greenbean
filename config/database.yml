@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: foodiefinder_development
+  database: greenbean_development
   pool: 5
   password:
 
@@ -40,13 +40,13 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: foodiefinder_test
+  database: greenbean_test
   pool: 5
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: foodiefinder_production
+  database: greenbean_production
   pool: 5
   password:

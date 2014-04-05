@@ -5,11 +5,3 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Event.delete_all
-Restaurant.delete_all
-Signup.delete_all
-LunchGroup.delete_all
-first_event = Event.create(:event_date => Date.new(2014,4,11))
-quicpic = Restaurant.create(:name =>"Quic Pic")
-deguru = Restaurant.create(:name =>"Deguru")
-kingston = Restaurant.create(:name =>"Kingston Station")
