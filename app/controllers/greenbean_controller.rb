@@ -18,8 +18,6 @@ class GreenbeanController < ApplicationController
 		# params["greenbean"]["image"] =  uploaded_file
 		@greenbean = Greenbean.new(greenbean_params)
 		decoded_file = Base64.decode64(params[:greenbean][:image])
-		
-		binding.pry
 		begin
 		  	file = Tempfile.new(['test', '.jpg']) 
 		  	file.binmode
