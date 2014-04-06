@@ -15,16 +15,21 @@
               <div class="table-responsive">
                 <table class="table table-recycle">
                   <!-- On rows -->
-                  <tr>
-                    <th class="active">Name</th>
-                    <th class="success">Starbucks? (true/false)</th>
-                    <th class="warning">Image Captured</th>
+                  <tr >
+                    <td colspan=4>Today's Recycles</td>
                   </tr>
                   <% Greenbean.all.each do |g| %>
                   <tr>
-                    <td class="active"><%= g.name %></td>
-                    <td class="success"><%= g.starbucks %></td>
-                    <td class="warning image"><%= image_tag("#{g.image_url}") %></td>
+                    <td ><%= g.name %></td>
+                    <td >
+                      <% if g.starbucks == true %>
+                      recycled
+                      <% else %>
+                      not recycled
+                      <% end %>
+                    </td>
+                    <td class="image"><%= image_tag("#{g.image_url}") %></td>
+                    <td>at Cleanweb Hackathon.</td>
                   </tr>
                   <% end %>
                 </table>
